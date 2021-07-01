@@ -15,7 +15,6 @@
 - `<title>` is written in English.
 - **Add Features :** Add: `<title>`
 - **Modify Features :** Fix: `<title>`
-- **Modify Documents :** Docs: `<title>`
 
 #### Gitflow Role
 
@@ -64,7 +63,6 @@ The rules for working with you are:
 - **기능 추가 :** Add: `<title>`
 - **기능 수정 :** Fix: `<title>`
 - **기능 핫픽스 :** Hotfix: `<title>`
-- **문서 수정 :** Docs: `<title>`
 
 #### Gitflow 규칙
 
