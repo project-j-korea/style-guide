@@ -46,6 +46,7 @@ The rules for working with you are:
 5. You are responsible for the part you worked on. In the event of an error, you have to roll back and correct it yourself.
 6. If Conflict is created, the worker who deploys it later will proceed after rebase. (Make sure confilct is not modified in github)
 7. In the event of an error, the develop who worked on the code generates and corrects the branch according to [Branch Naming](#Branch-Naming) after the rollback to that code.
+   - PR from 'hotfix' branch to 'master' branch is the same as normal work. Instead of squash merge, commit merge.
 
 ### 한국어
 
@@ -92,3 +93,4 @@ Project J에서는 github flow와 gitflow를 통합한 전략을 사용합니다
 5. 자신이 작업한 부분은 자신이 책임집니다. 에러 발생시 롤백 및 수정은 자신이 해야합니다.
 6. Conflict가 생긴 경우 나중에 배포하는 작업자가 rebase작업을 한후 진행합니다. _(github에서 confilct를 수정하는 일이 없도록 해야합니다.)_
 7. Hotfix 발생 시 에러가 발생한 코드를 작업한 작업자는 해당 코드에 대한 롤백 이후 [Branch 네이밍](#Branch-네이밍)에 따라서 브랜치 생성 후 수정합니다.
+   - `hotfix` branch에서 `master` branch로 PR은 일반 작업과 똑같이 하되, squash merge대신 commit merge합니다.
