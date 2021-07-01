@@ -34,14 +34,14 @@ The rules for working with you are:
 
    - In `Assignees`, select an developer.
    - Link the issue that matches the number.
-   - You immediately Squash merge after PR. The title and description of the merge course are not changed.
+   - You immediately Squash merge after PR. Modify the title in the merge course as `Merge [#XX] Pull Request`.
 
 4. After testing in the `deploy/XX` branch, create PR in the form of `[#XX] Pull Request` in the `master` branch.
 
    - In `Assignees`, select an developer.
    - Link the issue that matches the number.
    - `Project` is set to `oranization/project` for each service.
-   - You immediately Squash merge after PR. The title and description of the merge course are not changed.
+   - squash merge after receiving the reviewers' approves. Modify the title in the merge course as `Merge [#XX] Pull Request`.
 
 5. You are responsible for the part you worked on. In the event of an error, you have to roll back and correct it yourself.
 6. If Conflict is created, the worker who deploys it later will proceed after rebase. (Make sure confilct is not modified in github)
@@ -80,14 +80,14 @@ Project J에서는 github flow와 gitflow를 통합한 전략을 사용합니다
 
    - `Assignees`에 작업자를 선택합니다.
    - 번호에 맞는 issue를 Link합니다.
-   - PR 즉시 squash merge합니다. merge과정에서의 title과 description은 바꾸지 않습니다.
+   - PR 즉시 squash merge합니다. merge과정에서의 title은 `Merge [#XX] Pull Request`와 같게 수정합니다.
 
 4. `deploy/XX` branch에서 테스팅이후 `master` branch에 `[#XX] Pull Request`형식으로 PR을 생성합니다.
 
    - `Assignees에` 작업자를 선택합니다.
    - Project는 각 서비스의 `oranization/project`로 설정합니다.
    - 번호에 맞는 issue를 Link합니다.
-   - reviewer들의 approve를 받은 이후 squash merge합니다. merge과정에서의 title과 description은 바꾸지 않습니다.
+   - reviewer들의 approve를 받은 이후 squash merge합니다. merge과정에서의 title은 `Merge [#XX] Pull Request`와 같게 수정합니다.
 
 5. 자신이 작업한 부분은 자신이 책임집니다. 에러 발생시 롤백 및 수정은 자신이 해야합니다.
 6. Conflict가 생긴 경우 나중에 배포하는 작업자가 rebase작업을 한후 진행합니다. _(github에서 confilct를 수정하는 일이 없도록 해야합니다.)_
